@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise | Simple Converter</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container vh-100 w-100 d-flex flex-column align-items-center justify-content-center">
+        <h2 class="title">Temperature Converter</h2>
+        <form action="#" action="" class="form-div d-flex flex-wrap justify-content-center">
+            <div class="celsius_to d-flex flex-column align-items-center bg-info m-2">
+                <div class="header p-2">
+                    <p>Celcius to Fahrenheit, Kelvin and Rankine</p>
+                </div>
+                <div class="celsius p-2 d-flex flex-column align-items-center">   
+                    <input type="text" id="celsius">
+                    <label for="celsius">Celsius(°C)</label>
+                </div>
+                <div class="button p-2">
+                    <button  onclick="C_F()" class="btn btn-danger">Fahrenheit(°F)</button>
+                    <button  onclick="C_K()" class="btn btn-danger">Kelvin(°K)</button>
+                    <button  onclick="C_R()" class="btn btn-danger">Rankine(°R)</button>
+                </div>
+                <div class="K_F p-2 d-flex">
+                    <div class="d-flex flex-column p-2 align-items-center">
+                        <input type="text" id="ans1" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fahrenheit_to d-flex flex-column align-items-center bg-success m-2">
+                <div class="header p-2">
+                    <p>Fahrenheit to Celsius, Kelvin and Rankine</p>
+                </div>
+                <div class="p-2 d-flex flex-column align-items-center">   
+                    <input type="text" id="fahrenheit">
+                    <label for="fahrenheit">Fahrenheit(°F)</label>
+                </div>
+                <div class="button p-2">
+                    <button  onclick="F_C()" class="btn btn-danger">Celsius(°C)</button>
+                    <button  onclick="F_K()" class="btn btn-danger">Kelvin(°K)</button>
+                    <button  onclick="F_R()" class="btn btn-danger">Rankine(°R)</button>
+                </div>
+                <div class="K_F p-2 d-flex">
+                    <div class="d-flex flex-column p-2 align-items-center">
+                        <input type="text" id="ans2" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kelvin_to d-flex flex-column align-items-center bg-warning m-2">
+                <div class="header p-2">
+                    <p>Kelvin to Celsius, Fahrenheit and Rankine</p>
+                </div>
+                <div class="p-2 d-flex flex-column align-items-center">   
+                    <input type="text" id="kelvin">
+                    <label for="kelvin">Kelvin(°K)</label>
+                </div>
+                <div class="button p-2">
+                    <button  onclick="K_C()" class="btn btn-danger">Celsius(°C)</button>
+                    <button  onclick="K_F()" class="btn btn-danger">Fahrenheit(°F)</button>
+                    <button  onclick="K_R()" class="btn btn-danger">Rankine(°R)</button>
+                </div>
+                <div class="K_F p-2 d-flex">
+                    <div class="d-flex flex-column p-2 align-items-center">
+                        <input type="text" id="ans3" readonly>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="rankine_to d-flex flex-column align-items-center bg-primary m-2">
+                <div class="header p-2">
+                    <p>Rankine to Celsius, Fahrenheit and Kelvin</p>
+                </div>
+                <div class="p-2 d-flex flex-column align-items-center">   
+                    <input type="text" id="rankine">
+                    <label for="rankine">Rankine(°R)</label>
+                </div>
+                <div class="button p-2">
+                    <button  onclick="R_C()" class="btn btn-danger">Celsius(°C)</button>
+                    <button  onclick="R_F()" class="btn btn-danger">Fahrenheit(°F)</button>
+                    <button  onclick="R_K()" class="btn btn-danger">Kelvin(°K)</button>
+                </div>
+                <div class="K_F p-2 d-flex">
+                    <div class="d-flex flex-column p-2 align-items-center">
+                        <input type="text" id="ans4" readonly>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
